@@ -12,7 +12,7 @@ print(web3.eth.getBlock('latest'))
 
 # get latest 10 blocks
 latest = web3.eth.blockNumber
-for i in range(0, 10):
+for i in range(10):
   print(web3.eth.getBlock(latest - i))
 
 # get transaction from specific block
